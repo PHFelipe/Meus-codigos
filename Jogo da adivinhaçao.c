@@ -10,7 +10,7 @@ printf("*******************************************\n");
 printf("*Ola seja bem-vindo ao jogo da adivinhacao*\n");
 printf("*******************************************\n");
 
-printf("voce tem 5 tentativas, o numero esta entre 0 e 100 e sua pontuação também vai de 0 a 100! boa sorte :)\n");
+printf("voce tem %d tentativas, o numero esta entre 0 e 100 e sua pontuação também vai de 0 a 100! boa sorte :)\n", TENTATIVAS);
 
 int segundos = time(0);
 srand(segundos);
@@ -46,6 +46,7 @@ else{
     }
 if (i == TENTATIVAS){
     printf("\nnão foi desta vez, jogue novamente voce consegue!\n");
+    printf("\nSua pontuação foi de 0 pontos\n");
 }
 }
 printf("*********************\n");
