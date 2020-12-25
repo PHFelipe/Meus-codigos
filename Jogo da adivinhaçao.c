@@ -24,13 +24,20 @@ printf("(1) Facil (2) Médio (3) Dificil\n\n");
 printf("Escolha: ");
 scanf("%d", &Nivel);
 
-if (Nivel == 1){
+switch(Nivel){
+  case 1:
     Tentativas = 15;
-}else if (Nivel == 2){
+    break;
+  case 2:
     Tentativas = 10;
-}else{
+    break;
+  default: 
     Tentativas = 6;
+    break;
 }
+
+
+
 printf("voce tem %d tentativas o numero esta entre 0 e 100 e sua pontuação também vai de 0 a 100! boa sorte :)\n", Tentativas);
 
 
@@ -73,5 +80,6 @@ printf("*********************\n");
 printf("*obrigado por jogar!*\n");
 printf("*********************\n");
 }
+
 
 
