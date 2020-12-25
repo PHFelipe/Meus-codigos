@@ -36,10 +36,7 @@ switch(Nivel){
     break;
 }
 
-
-
 printf("voce tem %d tentativas o numero esta entre 0 e 100 e sua pontuação também vai de 0 a 100! boa sorte :)\n", Tentativas);
-
 
 //este "for" é o loop  que da continuidade as tentativas
 for(int i = 1; i <= Tentativas; i++){
